@@ -45,18 +45,33 @@ body{
   vertical-align:middle;
 }
 
+/* --- Consortium: balanced grid --- */
 .logos-grid{
-  max-width:500px;
-  margin:30px auto;
+  max-width:520px;              /* un poco más ancho */
+  margin:25px auto;             /* menos aire vertical */
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:25px 40px;
+  gap:18px 28px;                /* logos más cerca entre sí */
   justify-items:center;
   align-items:center;
 }
 
-.logos-grid img{ height:60px; }
+.logos-grid div{
+  width:145px;                  /* logos más grandes */
+  height:95px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
+.logos-grid img{
+  max-width:100%;
+  max-height:100%;
+  object-fit:contain;
+}
+
+
+/* --- Micro details --- */
 .micro-linea{
   width:60px;
   height:2px;
@@ -75,6 +90,12 @@ body{
   line-height:26px;
   text-align:center;
   margin-right:8px;
+}
+
+/* --- FIX duplicated numbering --- */
+ol{
+  list-style:none;
+  padding-left:0;
 }
 
 hr{
@@ -128,10 +149,10 @@ hr{
     </em></p>
 
     <div class="logos-grid">
-      <img src="css/images/bbglobal.png">
-      <img src="css/images/proalt.png">
-      <img src="css/images/algenex.png">
-      <img src="css/images/farmalan.png">
+      <div><img src="css/images/bbglobal.png"></div>
+      <div><img src="css/images/proalt.png"></div>
+      <div><img src="css/images/algenex.png"></div>
+      <div><img src="css/images/farmalan.png"></div>
     </div>
 
   </div>
