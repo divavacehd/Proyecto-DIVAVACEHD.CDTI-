@@ -2,93 +2,83 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
 <title>DIVAVACEHD Project</title>
 
 <style>
 body{
   font-family: Arial, sans-serif;
-  background:#f6f7f8;
-  margin:0;
-  padding:40px 20px;
-  color:#1f2933;
-  line-height:1.65;
+  background-color: #f6f7f8;
+  margin: 0;
+  padding: 40px 20px;
+  line-height: 1.6;
+  color: #1f2933;
 }
 
-/* Contenedor */
 .contenedor{
   max-width:900px;
   margin:auto;
   background:#ffffff;
   padding:40px;
-  border-radius:14px;
-}
-
-/* Hero */
-.hero{
-  background:linear-gradient(180deg,#ffffff 0%,#f3f4f6 100%);
-  padding:35px 25px;
   border-radius:12px;
-  margin-bottom:40px;
 }
 
-/* Utilidades */
-.centrado{text-align:center;}
-.espacio{height:40px;}
-strong{font-weight:700;}
-
-/* Títulos */
-.titulo{
-  font-family:"Segoe UI", Arial, sans-serif;
-  font-size:22px;
-  max-width:750px;
-  margin:25px auto;
+.centrado{
+  text-align:center;
 }
 
-h3{
-  font-family:"Segoe UI", Arial, sans-serif;
-  font-size:20px;
-  margin-bottom:20px;
-  padding-left:14px;
-  border-left:4px solid #d1d5db; /* micro-línea */
+.espacio{
+  height:40px;
 }
 
-/* Logos */
 .logos{
-  max-width:600px;
-  margin:30px auto;
+  max-width:650px;
+  margin:20px auto;
 }
+
 .logos img{
   height:60px;
   margin:15px;
   vertical-align:middle;
 }
 
-/* Sección */
-.seccion{
-  background:#fafafa;
-  padding:30px;
-  border-radius:12px;
-  border:1px solid #e5e7eb;
+strong{
+  font-weight:700;
 }
 
-/* Objetivos con badges */
+.titulo{
+  font-size:22px;
+  max-width:750px;
+  margin:30px auto;
+}
+
+hr{
+  border:none;
+  border-top:1px solid #ddd;
+  margin:40px 0;
+}
+
+/* Badges */
 .objetivos{
   list-style:none;
-  padding-left:0;
+  padding:0;
+  margin-top:30px;
 }
+
 .objetivos li{
   display:flex;
   align-items:flex-start;
-  margin-bottom:16px;
+  margin-bottom:18px;
 }
+
 .badge{
-  min-width:30px;
-  height:30px;
+  min-width:34px;
+  height:34px;
   border-radius:50%;
-  background:#eef2f7;
-  color:#374151;
+  background:#f1f3f5;
+  color:#555;
+  font-weight:600;
   font-size:14px;
-  font-weight:700;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -96,17 +86,9 @@ h3{
   flex-shrink:0;
 }
 
-/* Separadores */
-hr{
-  border:none;
-  border-top:1px solid #e5e7eb;
-  margin:40px 0;
-}
-
-/* Footer */
 .footer{
   font-size:13px;
-  color:#6b7280;
+  color:#666;
   text-align:center;
   line-height:1.5;
 }
@@ -118,10 +100,19 @@ hr{
 
 <div class="contenedor">
 
-  <div class="hero centrado">
+  <div class="centrado">
     <img src="css/images/logo-principal.png" style="height:65px;">
-    <br><br>
+  </div>
+
+  <br>
+
+  <div class="centrado">
     <a href="index.html">ES</a> | <a href="en.html">EN</a>
+  </div>
+
+  <br>
+
+  <div class="centrado">
 
     <p class="titulo"><strong>
       DEVELOPMENT OF A DIVA SUBUNIT VACCINE AGAINST EPIZOOTIC HEMORRHAGIC DISEASE (EHD) IN CATTLE PRODUCED USING CRISBIO® TECHNOLOGY
@@ -133,39 +124,58 @@ hr{
       <img src="css/images/aei.png">
       <img src="css/images/cdti.png">
     </div>
-  </div>
 
-  <p><em>
-    This project has been funded by CDTI and AEI, supported by the Spanish Ministry of Science and Innovation, within the framework of the State Plan for Scientific, Technical and Innovation Research (PEICTI), with the aim of promoting technological development, innovation and high-quality research.
-  </em></p>
+    <div class="espacio"></div>
 
-  <div class="logos">
-    <img src="css/images/bbglobal.png">
-    <img src="css/images/proalt.png">
-    <img src="css/images/algenex.png">
-    <img src="css/images/farmalan.png">
-  </div>
+    <p><em>
+      This project has been funded by CDTI and AEI, supported by the Spanish Ministry of Science and Innovation, within the framework of the State Plan for Scientific, Technical and Innovation Research (PEICTI), with the aim of promoting technological development, innovation and high-quality research.
+    </em></p>
 
-  <hr>
+    <div class="logos">
+      <img src="css/images/bbglobal.png">
+      <img src="css/images/proalt.png">
+      <img src="css/images/algenex.png">
+      <img src="css/images/farmalan.png">
+    </div>
 
-  <div class="seccion">
-    <h3>Objectives</h3>
-
-    <p>
-      <strong>The main objective</strong> of the project is to develop a safe and effective DIVA subunit vaccine against epizootic hemorrhagic disease in cattle (EHDV serotype 8).
-    </p>
-
-    <ul class="objetivos">
-      <li><span class="badge">1</span>Validation of protection results in cattle.</li>
-      <li><span class="badge">2</span>Development of the industrial antigen production process.</li>
-      <li><span class="badge">3</span>Development of analytical and diagnostic tools.</li>
-      <li><span class="badge">4</span>Structural and formulation studies.</li>
-      <li><span class="badge">5</span>Production of regulatory banks and batches.</li>
-      <li><span class="badge">6</span>Execution of clinical trials and preparation of the regulatory dossier.</li>
-    </ul>
   </div>
 
   <hr>
+
+  <h3>Objectives</h3>
+
+  <p>
+    <strong>The main objective</strong> of the project is to develop a safe and effective DIVA subunit vaccine against epizootic hemorrhagic disease in cattle (EHDV serotype 8). This vaccine aims to protect cattle and other susceptible species, significantly reducing mortality and morbidity caused by this disease.
+  </p>
+
+  <ul class="objetivos">
+    <li>
+      <div class="badge">1</div>
+      <div><strong>Validation of Protection Results in Cattle:</strong> Confirmation of efficacy, optimal dose and immune response in bovines.</div>
+    </li>
+    <li>
+      <div class="badge">2</div>
+      <div><strong>Development of the Industrial Antigen Production Process:</strong> Optimization and industrial scale-up of the antigen using CrisBio® technology.</div>
+    </li>
+    <li>
+      <div class="badge">3</div>
+      <div><strong>Development of Analytical and Diagnostic Tools:</strong> Development of quality control tools and differential diagnosis between vaccinated and infected animals.</div>
+    </li>
+    <li>
+      <div class="badge">4</div>
+      <div><strong>Structural and Formulation Studies:</strong> Structural characterization of the antigen and optimization of stable and effective formulations.</div>
+    </li>
+    <li>
+      <div class="badge">5</div>
+      <div><strong>Production of Regulatory Banks and Batches:</strong> Production of banks and regulatory batches under GMP conditions.</div>
+    </li>
+    <li>
+      <div class="badge">6</div>
+      <div><strong>Execution of Clinical Trials and Generation of the Regulatory Dossier:</strong> Clinical trials in cattle and preparation of the regulatory dossier for EMA.</div>
+    </li>
+  </ul>
+
+  <hr style="margin:50px 0 20px 0;">
 
   <div class="footer">
     <p>© 2026 DIVAVACEHD Consortium — BBGlobal, ProAlt, Algenex and Farmalan.</p>
