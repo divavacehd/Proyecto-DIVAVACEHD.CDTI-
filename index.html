@@ -47,18 +47,19 @@ body{
 
 /* --- Consorcio: grilla equilibrada --- */
 .logos-grid{
-  max-width:500px;
-  margin:30px auto;
+.logos-grid{
+  max-width:520px;              /* un poco más ancho */
+  margin:25px auto;             /* menos aire vertical */
   display:grid;
   grid-template-columns: repeat(2, 1fr);
-  gap:25px 40px;
+  gap:18px 28px;                /* logos más cerca entre sí */
   justify-items:center;
   align-items:center;
 }
 
 .logos-grid div{
-  width:120px;
-  height:80px;
+  width:150px;                  /* logos más grandes */
+  height:100px;
   display:flex;
   align-items:center;
   justify-content:center;
