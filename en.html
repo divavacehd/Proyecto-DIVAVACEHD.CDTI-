@@ -8,11 +8,11 @@
 <style>
 body{
   font-family: Arial, sans-serif;
-  background-color: #f6f7f8;
-  margin: 0;
-  padding: 40px 20px;
-  line-height: 1.6;
-  color: #1f2933;
+  background-color:#f6f7f8;
+  margin:0;
+  padding:40px 20px;
+  line-height:1.6;
+  color:#1f2933;
 }
 
 .contenedor{
@@ -23,17 +23,20 @@ body{
   border-radius:12px;
 }
 
-.centrado{
-  text-align:center;
-}
+.centrado{ text-align:center; }
+.espacio{ height:40px; }
 
-.espacio{
-  height:40px;
+.titulo{
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size:22px;
+  max-width:750px;
+  margin:30px auto;
 }
 
 .logos{
-  max-width:650px;
+  max-width:600px;
   margin:20px auto;
+  text-align:center;
 }
 
 .logos img{
@@ -42,48 +45,42 @@ body{
   vertical-align:middle;
 }
 
-strong{
-  font-weight:700;
+.logos-grid{
+  max-width:500px;
+  margin:30px auto;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:25px 40px;
+  justify-items:center;
+  align-items:center;
 }
 
-.titulo{
-  font-size:22px;
-  max-width:750px;
-  margin:30px auto;
+.logos-grid img{ height:60px; }
+
+.micro-linea{
+  width:60px;
+  height:2px;
+  background:#e5e7eb;
+  margin:20px auto;
+}
+
+.badge{
+  display:inline-block;
+  min-width:26px;
+  height:26px;
+  border-radius:50%;
+  background:#eef1f4;
+  color:#555;
+  font-size:13px;
+  line-height:26px;
+  text-align:center;
+  margin-right:8px;
 }
 
 hr{
   border:none;
-  border-top:1px solid #ddd;
+  border-top:1px solid #ccc;
   margin:40px 0;
-}
-
-/* Badges */
-.objetivos{
-  list-style:none;
-  padding:0;
-  margin-top:30px;
-}
-
-.objetivos li{
-  display:flex;
-  align-items:flex-start;
-  margin-bottom:18px;
-}
-
-.badge{
-  min-width:34px;
-  height:34px;
-  border-radius:50%;
-  background:#f1f3f5;
-  color:#555;
-  font-weight:600;
-  font-size:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-right:14px;
-  flex-shrink:0;
 }
 
 .footer{
@@ -93,7 +90,6 @@ hr{
   line-height:1.5;
 }
 </style>
-
 </head>
 
 <body>
@@ -110,7 +106,7 @@ hr{
     <a href="index.html">ES</a> | <a href="en.html">EN</a>
   </div>
 
-  <br>
+  <div class="micro-linea"></div>
 
   <div class="centrado">
 
@@ -131,7 +127,7 @@ hr{
       This project has been funded by CDTI and AEI, supported by the Spanish Ministry of Science and Innovation, within the framework of the State Plan for Scientific, Technical and Innovation Research (PEICTI), with the aim of promoting technological development, innovation and high-quality research.
     </em></p>
 
-    <div class="logos">
+    <div class="logos-grid">
       <img src="css/images/bbglobal.png">
       <img src="css/images/proalt.png">
       <img src="css/images/algenex.png">
@@ -148,32 +144,14 @@ hr{
     <strong>The main objective</strong> of the project is to develop a safe and effective DIVA subunit vaccine against epizootic hemorrhagic disease in cattle (EHDV serotype 8). This vaccine aims to protect cattle and other susceptible species, significantly reducing mortality and morbidity caused by this disease.
   </p>
 
-  <ul class="objetivos">
-    <li>
-      <div class="badge">1</div>
-      <div><strong>Validation of Protection Results in Cattle:</strong> Confirmation of efficacy, optimal dose and immune response in bovines.</div>
-    </li>
-    <li>
-      <div class="badge">2</div>
-      <div><strong>Development of the Industrial Antigen Production Process:</strong> Optimization and industrial scale-up of the antigen using CrisBio® technology.</div>
-    </li>
-    <li>
-      <div class="badge">3</div>
-      <div><strong>Development of Analytical and Diagnostic Tools:</strong> Development of quality control tools and differential diagnosis between vaccinated and infected animals.</div>
-    </li>
-    <li>
-      <div class="badge">4</div>
-      <div><strong>Structural and Formulation Studies:</strong> Structural characterization of the antigen and optimization of stable and effective formulations.</div>
-    </li>
-    <li>
-      <div class="badge">5</div>
-      <div><strong>Production of Regulatory Banks and Batches:</strong> Production of banks and regulatory batches under GMP conditions.</div>
-    </li>
-    <li>
-      <div class="badge">6</div>
-      <div><strong>Execution of Clinical Trials and Generation of the Regulatory Dossier:</strong> Clinical trials in cattle and preparation of the regulatory dossier for EMA.</div>
-    </li>
-  </ul>
+  <ol>
+    <li><span class="badge">1</span><strong>Validation of Protection Results in Cattle:</strong> Confirmation of efficacy, optimal dose and immune response in bovines.</li>
+    <li><span class="badge">2</span><strong>Development of the Industrial Antigen Production Process:</strong> Optimization and industrial scale-up of the antigen using CrisBio® technology.</li>
+    <li><span class="badge">3</span><strong>Development of Analytical and Diagnostic Tools:</strong> Development of quality control tools and differential diagnosis between vaccinated and infected animals.</li>
+    <li><span class="badge">4</span><strong>Structural and Formulation Studies:</strong> Structural characterization of the antigen and optimization of stable and effective formulations.</li>
+    <li><span class="badge">5</span><strong>Production of Regulatory Banks and Batches:</strong> Production of banks and regulatory batches under GMP conditions.</li>
+    <li><span class="badge">6</span><strong>Execution of Clinical Trials and Generation of the Regulatory Dossier:</strong> Clinical trials in cattle and preparation of the regulatory dossier for EMA.</li>
+  </ol>
 
   <hr style="margin:50px 0 20px 0;">
 
