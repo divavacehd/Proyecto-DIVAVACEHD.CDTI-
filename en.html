@@ -2,65 +2,111 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
 <title>DIVAVACEHD Project</title>
 
 <style>
 body{
   font-family: Arial, sans-serif;
-  background-color: #f6f7f8;
-  margin: 0;
-  padding: 40px 20px;
-  line-height: 1.6;
-  color: #1f2933;
+  background:#f6f7f8;
+  margin:0;
+  padding:40px 20px;
+  color:#1f2933;
+  line-height:1.65;
 }
 
+/* Contenedor */
 .contenedor{
   max-width:900px;
   margin:auto;
   background:#ffffff;
   padding:40px;
+  border-radius:14px;
+}
+
+/* Hero */
+.hero{
+  background:linear-gradient(180deg,#ffffff 0%,#f3f4f6 100%);
+  padding:35px 25px;
   border-radius:12px;
+  margin-bottom:40px;
 }
 
-.centrado{
-  text-align:center;
+/* Utilidades */
+.centrado{text-align:center;}
+.espacio{height:40px;}
+strong{font-weight:700;}
+
+/* Títulos */
+.titulo{
+  font-family:"Segoe UI", Arial, sans-serif;
+  font-size:22px;
+  max-width:750px;
+  margin:25px auto;
 }
 
-.espacio{
-  height:40px;
+h3{
+  font-family:"Segoe UI", Arial, sans-serif;
+  font-size:20px;
+  margin-bottom:20px;
+  padding-left:14px;
+  border-left:4px solid #d1d5db; /* micro-línea */
 }
 
+/* Logos */
 .logos{
   max-width:600px;
-  margin:auto;
+  margin:30px auto;
 }
-
 .logos img{
   height:60px;
   margin:15px;
   vertical-align:middle;
 }
 
-strong{
+/* Sección */
+.seccion{
+  background:#fafafa;
+  padding:30px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+}
+
+/* Objetivos con badges */
+.objetivos{
+  list-style:none;
+  padding-left:0;
+}
+.objetivos li{
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:16px;
+}
+.badge{
+  min-width:30px;
+  height:30px;
+  border-radius:50%;
+  background:#eef2f7;
+  color:#374151;
+  font-size:14px;
   font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-right:14px;
+  flex-shrink:0;
 }
 
-.titulo{
-  font-size:22px;
-  max-width:750px;
-  margin:auto;
-}
-
+/* Separadores */
 hr{
   border:none;
   border-top:1px solid #e5e7eb;
   margin:40px 0;
 }
 
+/* Footer */
 .footer{
   font-size:13px;
-  color:#666;
+  color:#6b7280;
   text-align:center;
   line-height:1.5;
 }
@@ -72,19 +118,10 @@ hr{
 
 <div class="contenedor">
 
-  <div class="centrado">
+  <div class="hero centrado">
     <img src="css/images/logo-principal.png" style="height:65px;">
-  </div>
-
-  <br>
-
-  <div class="centrado">
+    <br><br>
     <a href="index.html">ES</a> | <a href="en.html">EN</a>
-  </div>
-
-  <br>
-
-  <div class="centrado">
 
     <p class="titulo"><strong>
       DEVELOPMENT OF A DIVA SUBUNIT VACCINE AGAINST EPIZOOTIC HEMORRHAGIC DISEASE (EHD) IN CATTLE PRODUCED USING CRISBIO® TECHNOLOGY
@@ -96,38 +133,37 @@ hr{
       <img src="css/images/aei.png">
       <img src="css/images/cdti.png">
     </div>
+  </div>
 
-    <div class="espacio"></div>
+  <p><em>
+    This project has been funded by CDTI and AEI, supported by the Spanish Ministry of Science and Innovation, within the framework of the State Plan for Scientific, Technical and Innovation Research (PEICTI), with the aim of promoting technological development, innovation and high-quality research.
+  </em></p>
 
-    <p><em>
-      This project has been funded by CDTI and AEI, supported by the Spanish Ministry of Science and Innovation, within the framework of the State Plan for Scientific, Technical and Innovation Research (PEICTI), with the aim of promoting technological development, innovation and high-quality research.
-    </em></p>
-
-    <div class="logos">
-      <img src="css/images/bbglobal.png">
-      <img src="css/images/proalt.png">
-      <img src="css/images/algenex.png">
-      <img src="css/images/farmalan.png">
-    </div>
-
+  <div class="logos">
+    <img src="css/images/bbglobal.png">
+    <img src="css/images/proalt.png">
+    <img src="css/images/algenex.png">
+    <img src="css/images/farmalan.png">
   </div>
 
   <hr>
 
-  <h3>Objectives</h3>
+  <div class="seccion">
+    <h3>Objectives</h3>
 
-  <p>
-    <strong>The main objective</strong> of the project is to develop a safe and effective DIVA subunit vaccine against epizootic hemorrhagic disease in cattle (EHDV serotype 8). This vaccine aims to protect cattle and other susceptible species, significantly reducing mortality and morbidity caused by this disease.
-  </p>
+    <p>
+      <strong>The main objective</strong> of the project is to develop a safe and effective DIVA subunit vaccine against epizootic hemorrhagic disease in cattle (EHDV serotype 8).
+    </p>
 
-  <ol>
-    <li><strong>Validation of Protection Results in Cattle:</strong> Confirmation of efficacy, optimal dose and immune response in bovines.</li>
-    <li><strong>Development of the Industrial Antigen Production Process:</strong> Optimization and industrial scale-up of the antigen using CrisBio® technology.</li>
-    <li><strong>Development of Analytical and Diagnostic Tools:</strong> Development of quality control tools and differential diagnosis between vaccinated and infected animals.</li>
-    <li><strong>Structural and Formulation Studies:</strong> Structural characterization of the antigen and optimization of stable and effective formulations.</li>
-    <li><strong>Production of Regulatory Banks and Batches:</strong> Production of banks and regulatory batches under GMP conditions.</li>
-    <li><strong>Execution of Clinical Trials and Generation of the Regulatory Dossier:</strong> Clinical trials in cattle and preparation of the regulatory dossier for EMA.</li>
-  </ol>
+    <ul class="objetivos">
+      <li><span class="badge">1</span>Validation of protection results in cattle.</li>
+      <li><span class="badge">2</span>Development of the industrial antigen production process.</li>
+      <li><span class="badge">3</span>Development of analytical and diagnostic tools.</li>
+      <li><span class="badge">4</span>Structural and formulation studies.</li>
+      <li><span class="badge">5</span>Production of regulatory banks and batches.</li>
+      <li><span class="badge">6</span>Execution of clinical trials and preparation of the regulatory dossier.</li>
+    </ul>
+  </div>
 
   <hr>
 
